@@ -23,7 +23,7 @@ class Tree:
                 return 1
             else:
                 return self.__add(cur_node.left_child, val)
-        if val > cur_node.right_child:
+        if val > cur_node.val:
             if cur_node.right_child == None:
                 cur_node.right_child = Node(val)
                 return 2
@@ -87,7 +87,7 @@ class Tree:
         elif order == 'post_order':
             self.post_order()
         else:
-            raise ValueError('Invalid order %s. valid options are {\"pre_order\", \"in_order\", \"post_order\"'%(order))
+            raise ValueError('Invalid order %s. valid options are {\"pre_order\", \"in_order\", \"post_order\"}'%(order))
 
         for node in self.stack:
             print(node.val, end = ' ')
