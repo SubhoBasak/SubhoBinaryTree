@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='SubhoDataStructure',
-    version='1.0',
+    version='1.1',
     packages=['SubhoDataStructure'],
     url='https://github.com/SubhoBasak',
     license='Open Source',
